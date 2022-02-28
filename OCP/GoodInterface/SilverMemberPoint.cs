@@ -8,7 +8,7 @@ namespace OCP.GoodInterface
     {
         public int GetPoint(int point)
         {
-            return point * 2;
+            return (int)(point * 0.02);
         }
     }
 }
