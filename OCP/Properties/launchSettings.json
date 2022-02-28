@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "OCP": {
+      "commandName": "Project",
+      "commandLineArgs": "S100000 100"
+    }
+  }
+}
