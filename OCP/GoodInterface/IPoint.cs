@@ -13,6 +13,6 @@ namespace OCP.GoodInterface
             GOLD
         };
 
-        public int GetPoint();
+        public int GetPoint(int point);
     }
 }
