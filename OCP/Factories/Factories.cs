@@ -5,7 +5,7 @@ using System.Text;
 
 namespace OCP.Factories
 {
-    class Factories
+    static class Factory
     {
         public static IPoint CreatePoint(string memberNo)
         {
