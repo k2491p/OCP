@@ -1,4 +1,5 @@
-﻿using OCP.GoodInterface;
+﻿using OCP.GoodAbstract;
+using OCP.GoodInterface;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -7,19 +8,35 @@ namespace OCP.Factories
 {
     static class Factory
     {
-        public static IPoint CreatePoint(string memberNo)
+        public static IPoint CreateIPoint(string memberNo)
         {
             if (memberNo.StartsWith("G"))
             {
-                return new GoldMemberPoint();
+                return new GoodInterface.GoldMemberPoint();
             }
 
             if (memberNo.StartsWith("S"))
             {
-                return new SilverMemberPoint();
+                return new GoodInterface.SilverMemberPoint();
             }
 
-            return new NormalMemberPoint();
+            return new GoodInterface.NormalMemberPoint();
+
+        }
+
+        public static PointBase CreatePointBase(string memberNo)
+        {
+            if (memberNo.StartsWith("G"))
+            {
+                return new GoodAbstract.GoldMemberPoint();
+            }
+
+            if (memberNo.StartsWith("S"))
+            {
+                return new GoodAbstract.SilverMemberPoint();
+            }
+
+            return new GoodAbstract.NormalMemberPoint();
 
         }
     }
