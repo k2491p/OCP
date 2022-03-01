@@ -6,9 +6,9 @@ namespace OCP.GoodInterface
 {
     public sealed class SilverMemberPoint : IPoint
     {
-        public int GetPoint(int point)
+        public int GetPoint(int price)
         {
-            return (int)(point * 0.02);
+            return (int)(price * 0.02);
         }
     }
 }

@@ -7,9 +7,9 @@ namespace OCP.GoodInterface
 {
     public sealed class NormalMemberPoint : IPoint
     {
-        public int GetPoint(int point)
+        public int GetPoint(int price)
         {
-            return (int)(point * 0.01);
+            return (int)(price * 0.01);
         }
     }
 }
