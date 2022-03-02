@@ -6,13 +6,6 @@ namespace OCP.GoodInterface
 {
     interface IPoint
     {
-        protected enum memberType
-        {
-            NORMAL,
-            SILVER,
-            GOLD
-        };
-
         public int GetPoint(int point);
     }
 }
