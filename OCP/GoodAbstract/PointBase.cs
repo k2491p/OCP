@@ -9,7 +9,7 @@ namespace OCP.GoodAbstract
         public int GetPoint(int price)
         {
             var point = GetPointSub(price);
-            if (DateTime.Now.Day == 1)
+            if (DateTime.Now.Day == 10)
             {
                 point *= 10;
             }
